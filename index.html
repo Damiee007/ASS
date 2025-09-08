@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education Details</title>
+</head>
+<body>
+    <a href="index.html">Index</a>
+    <a href="login.html">Login</a>
+    <a href="reg.html">Register</a>
+  <h1>Education Details</h1>
+  <form>
+    <table border="0" cellspacing="0" cellpadding="8">
+      <tr>
+        <td>*Exact Title in Original Language:</td>
+        <td><input type="text" name="originalTitle" size="40"></td>
+      </tr>
+      <tr>
+        <td>*Title of the Degree/Diploma:</td>
+        <td><input type="text" name="degreeTitle" size="40"></td>
+      </tr>
+      <tr>
+        <td>*Degree/Diploma Obtained:</td>
+        <td>
+          <input type="radio" name="obtained" value="yes"> Yes
+          <input type="radio" name="obtained" value="no"> No
+        </td>
+      </tr>
+      <tr>
+        <td>*Attended:</td>
+        <td>
+          From: <input type="date" name="from"> 
+          To: <input type="date" name="to">
+        </td>
+      </tr>
+      <tr>
+        <td>*Type of Institution:</td>
+        <td>
+          <select name="institutionType">
+            <option>Select</option>
+            <option>University</option>
+            <option>College</option>
+            <option>Technical School</option>
+            <option>Other</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>*Country:</td>
+        <td>
+          <select name="country">
+            <option>Select</option>
+            <option>USA</option>
+            <option>UK</option>
+            <option>Canada</option>
+            <option>Germany</option>
+            <option>Japan</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>*City Where Attended:</td>
+        <td><input type="text" name="city" size="40"></td>
+      </tr>
+      <tr>
+        <td>*Name of Institution:</td>
+        <td><input type="text" name="institution" size="40"></td>
+      </tr>
+      <tr>
+        <td>Institution Web Site:</td>
+        <td><input type="url" name="website" size="40"></td>
+      </tr>
+      <tr>
+        <td>*Main Course of Study:</td>
+        <td><input type="text" name="course" size="40"></td>
+      </tr>
+      <tr>
+        <td>*Field of Study:</td>
+        <td><input type="text" name="field" size="40"></td>
+      </tr>
+      <tr>
+        <td>Specialization:</td>
+        <td><input type="text" name="specialization" size="40"></td>
+      </tr>
+      <tr>
+        <td>*Enrollment Status:</td>
+        <td>
+          <input type="radio" name="status" value="full"> Full-Time
+          <input type="radio" name="status" value="part"> Part-Time
+        </td>
+      </tr>
+      <tr>
+        <td>*Teaching Method:</td>
+        <td><input type="text" name="method" size="40"></td>
+      </tr>
+      <tr>
+        <td>Additional Comments:</td>
+        <td><textarea name="comments" rows="4" cols="40"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <button type="submit">Submit</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

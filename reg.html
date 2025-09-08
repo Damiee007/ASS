@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+</head>
+<body>
+  <h1>Registration Form</h1>
+  <form>
+    <table border="0" cellspacing="0" cellpadding="8">
+      <tr>
+        <td>First Name:</td>
+        <td><input type="text" name="first" size="25"></td>
+        <td>Last Name:</td>
+        <td><input type="text" name="last" size="25"></td>
+      </tr>
+      <tr>
+        <td>Date of Birth:</td>
+        <td><input type="date" name="dob"></td>
+        <td>Gender:</td>
+        <td>
+          <input type="radio" name="gender" value="male"> Male
+          <input type="radio" name="gender" value="female"> Female
+          <input type="radio" name="gender" value="other"> Other
+        </td>
+      </tr>
+      <tr>
+        <td>Phone:</td>
+        <td><input type="tel" name="phone" size="25"></td>
+        <td>Email:</td>
+        <td><input type="email" name="email" size="25"></td>
+      </tr>
+    </table>
+
+    <h2>Address</h2>
+    <table border="0" cellspacing="0" cellpadding="8">
+      <tr>
+        <td colspan="2"><input type="text" name="street1" placeholder="Street Address" size="60"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="text" name="street2" placeholder="Street Address Line 2" size="60"></td>
+      </tr>
+      <tr>
+        <td><input type="text" name="city" placeholder="City" size="25"></td>
+        <td><input type="text" name="state" placeholder="State" size="25"></td>
+      </tr>
+      <tr>
+        <td><input type="text" name="postal" placeholder="Postal/Zip Code" size="25"></td>
+        <td>
+          <select name="country">
+            <option>Select Country</option>
+            <option>United Kingdom</option>
+            <option>United States</option>
+            <option>Canada</option>
+            <option>Australia</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+
+    <h2>Additional Information</h2>
+    <table border="0" cellspacing="0" cellpadding="8">
+      <tr>
+        <td>Level of Education:</td>
+        <td colspan="3">
+          <input type="checkbox" name="edu" value="college"> College
+          <input type="checkbox" name="edu" value="bachelors"> Bachelor's
+          <input type="checkbox" name="edu" value="masters"> Master's
+        </td>
+      </tr>
+      <tr>
+        <td>Anything else worth noting about you:</td>
+        <td colspan="3"><textarea name="notes" cols="50" rows="5"></textarea></td>
+      </tr>
+      <tr>
+        <td>Password:</td>
+        <td><input type="password" name="password" size="25"></td>
+        <td>Confirm Password:</td>
+        <td><input type="password" name="confirm" size="25"></td>
+      </tr>
+      <tr>
+        <td colspan="4" style="text-align: center;">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+</head>
+<body>
+  <h1>Login Form</h1>
+  <form>
+    <table border="0" cellspacing="0" cellpadding="8">
+      <tr>
+        <td>Username:</td>
+        <td><input type="text" name="username"></td>
+      </tr>
+      <tr>
+        <td>Password:</td>
+        <td><input type="password" name="password"></td>
+      </tr>
+      <tr>
+        <td>City of Employment:</td>
+        <td><input type="text" name="city"></td>
+      </tr>
+      <tr>
+        <td>Web Server:</td>
+        <td>
+          <select name="server">
+            <option>Choose a server</option>
+            <option>Server 1</option>
+            <option>Server 2</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Please Specify Your Role:</td>
+        <td>
+          <input type="radio" name="role" value="admin"> Admin<br>
+          <input type="radio" name="role" value="engineer"> Engineer<br>
+          <input type="radio" name="role" value="manager"> Manager<br>
+          <input type="radio" name="role" value="guest"> Guest
+        </td>
+      </tr>
+      <tr>
+        <td>Single Sign-on To:</td>
+        <td>
+          <input type="checkbox" name="sso" value="mail"> Mail<br>
+          <input type="checkbox" name="sso" value="payroll"> Payroll<br>
+          <input type="checkbox" name="sso" value="selfservice"> Self-service
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <button type="submit">Login</button>
+          <button type="reset">Reset</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
